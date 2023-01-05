@@ -54,7 +54,9 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 70px;
 }
 
-
+section{
+    overflow-y: hidden;
+}
 
 .container{
     max-width: 900px;
@@ -89,7 +91,6 @@ h1,h2,h3,h4,h5,h6{
     background-position: center bottom 15vh;
     background-attachment: fixed;
     height: 120vh;
-    min-height: 50vh;
     position: relative;
     text-align: center;
     padding-top: 50px;
@@ -101,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
 
 .title-screen__content{
     background-color: $color-bg-dark;
-    height: 50vh;
+    min-height: 50vh;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -115,23 +116,32 @@ h1,h2,h3,h4,h5,h6{
     
 }
 
-.title--main{
-    font-size: 70px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.title-screen__descr{
-    line-height: 1.6;
-}
 
 .title-screen__title-wrapper{
-    position: relative;
-    top: -6em;
     z-index: 5;
     max-width: 900px;
     margin: 0 auto;
 }
+
+.title--main{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 1.4em;
+    text-shadow: 0px 0px 12px rgba($color: #000000, $alpha: 0.25);
+}
+
+.title-screen__descr{
+    line-height: 1.6;
+    font-size: 16px;
+    position: relative;
+    bottom: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
 
 
 .navigation{
@@ -479,7 +489,7 @@ h1,h2,h3,h4,h5,h6{
     color: #595959;
     font-size: 2em;
     font-weight: 700;
-    padding: 50px 0px;
+    padding-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
     width: 100%;

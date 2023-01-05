@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.4; }
 
 .title.title--sec { font-size: 45px; font-weight: 700; line-height: 70px; text-align: center; margin-bottom: 70px; }
 
+section { overflow-y: hidden; }
+
 .container { max-width: 900px; margin: 0 auto; }
 
 .container--article { max-width: 700px; margin: 0 auto; }
@@ -24,16 +26,16 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.4; }
 
 .display-flex-col { display: flex; flex-direction: column; }
 
-.title-screen { background-image: url(../images/title-screen-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center bottom 15vh; background-attachment: fixed; height: 120vh; min-height: 50vh; position: relative; text-align: center; padding-top: 50px; }
+.title-screen { background-image: url(../images/title-screen-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center bottom 15vh; background-attachment: fixed; height: 120vh; position: relative; text-align: center; padding-top: 50px; }
 .title-screen .logo-container { text-align: center; }
 
-.title-screen__content { background-color: #1e1e1e; height: 50vh; position: absolute; bottom: 0; left: 0; right: 0; }
+.title-screen__content { background-color: #1e1e1e; min-height: 50vh; position: absolute; bottom: 0; left: 0; right: 0; }
 
-.title--main { font-size: 70px; font-weight: 700; margin-bottom: 20px; }
+.title-screen__title-wrapper { z-index: 5; max-width: 900px; margin: 0 auto; }
 
-.title-screen__descr { line-height: 1.6; }
+.title--main { font-size: 70px; font-weight: 700; margin-bottom: 20px; position: relative; bottom: 1.4em; text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); }
 
-.title-screen__title-wrapper { position: relative; top: -6em; z-index: 5; max-width: 900px; margin: 0 auto; }
+.title-screen__descr { line-height: 1.6; font-size: 16px; position: relative; bottom: 60px; max-width: 600px; margin: 0 auto; }
 
 .navigation { background-color: #8a8a8a; margin-bottom: 75px; position: relative; z-index: 10; }
 
@@ -126,6 +128,6 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.4; }
 
 .footer__socials { margin-left: auto; align-items: flex-end; }
 
-.footer__seeyou { color: #595959; font-size: 2em; font-weight: 700; padding: 50px 0px; text-align: center; text-transform: uppercase; width: 100%; }
+.footer__seeyou { color: #595959; font-size: 2em; font-weight: 700; padding-bottom: 50px; text-align: center; text-transform: uppercase; width: 100%; }
 
 .section-shadowbox { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); }
