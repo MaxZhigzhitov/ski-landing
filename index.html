@@ -29,10 +29,10 @@
       </div>
       <div class="title-screen__content display-flex-col">
         <div class="title-screen__title-wrapper">
-          <h1 class="title title--main">
+          <h1 class="title title--main title-main-anim">
             Looking for contrast. Reaching the destination
           </h1>
-          <div class="title-screen__descr">
+          <div class="title-screen__descr title-descr-anim">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               consequat efficitur scelerisque. Integer lobortis eu leo commodo
@@ -40,12 +40,26 @@
               facilisis nunc ultrices et.
             </p>
           </div>
+          <nav class="title-descr__socials socials">
+            <a href="#">
+              <img src="images/svg/facebook-logo.svg" alt="facebook logo" />
+            </a>
+            <a href="#">
+              <img src="images/svg/instagram-logo.svg" alt="instagram logo" />
+            </a>
+            <a href="#">
+              <img src="images/svg/twitter-logo.svg" alt="twitter logo" />
+            </a>
+            <a href="#">
+              <img src="images/svg/email-logo.svg" alt="email logo" />
+            </a>
+          </nav>
         </div>
       </div>
       <!-- <div class="title--big-label">
         <div class="text">STROKE</div>
       </div> -->
-      <div class="title--big-label storke-label">
+      <div class="title--big-label storke-label title--big-anim">
         <img src="images/svg/Subtract.svg" alt="" />
 
         <nav class="title-screen__socials socials">
@@ -66,25 +80,46 @@
     </header>
 
     <section class="travel">
-      <div class="title--big-label travel-label">
+      <div class="title--big-label travel-label title--big-anim">
         <img src="images/svg/Subtract-travel.svg" alt="" />
       </div>
 
+      <input
+        class="navigation__controls-input"
+        type="checkbox"
+        name="navlist-toggle"
+        id="navlist-toggle"
+      />
+      <label class="navigation__controls-label" for="navlist-toggle"
+        ><i class="fa-solid fa-chevron-down"></i
+      ></label>
       <div class="navigation section-shadowbox">
         <div class="container">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#">Track</a></li>
-            <li class="navigation__item"><a href="#">About Us</a></li>
-            <li class="navigation__item"><a href="#">Pricing</a></li>
-            <li class="navigation__item"><a href="#">Testimonials</a></li>
-            <li class="navigation__item"><a href="#">Housing</a></li>
+            <li class="navigation__item block-item-anim">
+              <a href="#">Track</a>
+            </li>
+            <li class="navigation__item block-item-anim">
+              <a href="#">About Us</a>
+            </li>
+            <li class="navigation__item block-item-anim">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="navigation__item block-item-anim">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="navigation__item block-item-anim">
+              <a href="#">Housing</a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="container--article">
         <article class="travel__content">
-          <h2 class="title title--sec">GO EVERYWHERE YOU LIKE</h2>
-          <div class="textblock travel__textblock">
+          <h2 class="title title--sec title-sec-anim">
+            GO EVERYWHERE YOU LIKE
+          </h2>
+          <div class="textblock travel__textblock textblock-anim">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               consequat efficitur scelerisque. Integer lobortis eu leo commodo
@@ -104,7 +139,7 @@
             src="images/jason-blackeye-bzJjHwdzBsA-unsplash.jpg"
             alt="image of couple on cableway"
           />
-          <div class="textblock travel__textblock">
+          <div class="textblock travel__textblock textblock-anim">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               consequat efficitur scelerisque. Integer lobortis eu leo commodo
@@ -125,21 +160,21 @@
 
     <section class="discount content-text-white section-shadowbox">
       <div class="container">
-        <h2 class="title title--sec">
+        <h2 class="title title--sec title-sec-anim">
           Get Ready For The Hearttaking Adventure
         </h2>
-        <div class="discount__subtitle">
+        <div class="discount__subtitle textblock-anim">
           and Get your special discount offering
         </div>
         <div class="discount__flex-container">
-          <div class="discount__item">
+          <div class="discount__item textblock-anim">
             <div class="discount__percent">30%</div>
             <div class="discount__discount">DISCOUNT</div>
             <div class="discount__description">
               From 2 January to 15 january
             </div>
           </div>
-          <div class="discount__item">
+          <div class="discount__item textblock-anim">
             <div class="discount__percent">15%</div>
             <div class="discount__discount">DISCOUNT</div>
             <div class="discount__description">Come with your friends</div>
@@ -149,11 +184,11 @@
     </section>
 
     <section class="pricing">
-      <div class="title--big-label travel-label">
+      <div class="title--big-label travel-label title--big-anim">
         <img src="images/svg/Subtract-pricing.svg" alt="" />
       </div>
       <div class="container">
-        <h2 class="title title--sec">Pricing</h2>
+        <h2 class="title title--sec title-sec-anim">Pricing</h2>
         <div class="pricing__flex-container">
           <div class="pricing__item">
             <div class="title pricing__title">Personal</div>
@@ -225,11 +260,11 @@
     </section>
 
     <section class="housing content-text-white section-shadowbox">
-      <div class="title--big-label housing-label">
+      <div class="title--big-label housing-label title--big-anim">
         <img src="images/svg/Subtract-houses.svg" alt="" />
       </div>
       <div class="container display-flex-col">
-        <h2 class="title title--sec">
+        <h2 class="title title--sec title-sec-anim">
           ONE DAY IS NOT ENOUGH? FEEL FREE TO STAY AT US
         </h2>
         <div class="housing__text">CALL US AND BOOK A NUMBER</div>
@@ -241,9 +276,9 @@
 
     <section class="testimonials">
       <div class="container">
-        <h2 class="title title--sec">Testimonials</h2>
+        <h2 class="title title--sec title-sec-anim">Testimonials</h2>
         <div class="testimonials__flex-container">
-          <div class="testimonials__item">
+          <div class="testimonials__item block-item-anim">
             <img
               class="testimonials__photo"
               src="images/profile-photo.jpg"
@@ -260,13 +295,13 @@
             </div>
             <div class="testimonials__author">David Stone</div>
           </div>
-          <div class="testimonials__item">
+          <div class="testimonials__item block-item-anim">
             <img
               class="testimonials__photo"
               src="images/profile-photo1.jpg"
               alt="profile photo 1"
             />
-            <div class="testimonials__textblock">
+            <div class="textblock testimonials__textblock">
               <em>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -278,13 +313,13 @@
             </div>
             <div class="testimonials__author">David Stone</div>
           </div>
-          <div class="testimonials__item">
+          <div class="testimonials__item block-item-anim">
             <img
               class="testimonials__photo"
               src="images/profile-photo2.jpg"
               alt="profile photo 1"
             />
-            <div class="testimonials__textblock">
+            <div class="textblock testimonials__textblock">
               <em
                 ><p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -322,8 +357,6 @@
               <a href="#">Booking</a>
             </li>
           </ul>
-        </nav>
-        <nav class="footer__navigation-menu">
           <ul class="footer__navigation-list">
             <li>
               <a href="#">For Partners</a>
