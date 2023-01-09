@@ -39,9 +39,6 @@ body{
     line-height: 1.6;
 }
 
-.textblock{
-    position: relative;
-}
 
 h1,h2,h3,h4,h5,h6{
     font-weight: bold;
@@ -141,43 +138,6 @@ section{
     
 }
 
-.title-main-anim{animation: title-main-keyf 0.8s ease-out both;}
-.title-sec-anim{animation: title-sec-keyf 0.8s ease-out both}
-.textblock-anim{animation: textblock-keyf 1s ease-out both}
-
-@keyframes title-main-keyf{
-    from {opacity: 0; bottom: 0.6em}
-    to {opacity: 1; bottom: 1.2em}
-}
-
-@keyframes title-descr-keyf{
-    from {opacity: 0; bottom: 30px;}
-    to {opacity: 1; bottom: 60px;}
-}
-
-@keyframes title-sec-keyf{
-    from {opacity: 0; top: 1em}
-    to {opacity: 1; top: 0em}
-}
-
-@keyframes textblock-keyf{
-    from {opacity: 0; top: 1.5em}
-    to {opacity: 1; top: 0em}
-}
-
-@keyframes big-label-keyf{
-    from {top: -55px; opacity: 0}
-    to {top: 0px; opacity: 1}
-}
-
-@keyframes block-item-keyf{
-    from{opacity: 0; top: 30px}
-    to{opacity: 1; top: 0px}
-}
-@keyframes block-item-hor-keyf{
-    from{opacity: 0; right: 50px}
-    to{opacity: 1; right: 0px}
-}
 
 .title-screen__descr{
     line-height: 1.6;
@@ -188,25 +148,8 @@ section{
     margin: 0 auto;
 }
 
-.title-descr-anim{
-    animation: title-descr-keyf 0.8s ease-out both;
-}
 
 
-
-.textblock-anim{
-    animation: textblock-keyf 0.8s ease-out both;
-}
-
-.block-item-anim{
-    animation: block-item-keyf 0.8s ease-out both;
-    animation-delay: 0.4s;
-}
-
-.block-item-hor-anim{
-    animation: block-item-hor-keyf 0.8s ease-out both;
-    animation-delay: 0.4s;
-}
 
 
 .navigation{
@@ -519,10 +462,6 @@ section{
         z-index: -1;
     }
 
-    &.title--big-anim{
-        animation: big-label-keyf 0.8s ease-out both;
-    }
-    
 }
 
 .socials{
@@ -743,4 +682,26 @@ section{
         transform: rotate(-180deg);
     }
     
+}
+
+
+
+
+// ANIMATION RULES
+
+@keyframes anim-slight-keyf{
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1;  transform: translateY(0px);}
+}
+
+@keyframes anim-label-keyf{
+    from {opacity: 0; transform: translateY(-30px)}
+    to {opacity: 1; transform: translateY(0px)}
+}
+
+.anim-slight{
+    animation: anim-slight-keyf 0.8s ease-out both;
+}
+.anim-label{
+    animation: anim-label-keyf 0.8s ease-out both;
 }
