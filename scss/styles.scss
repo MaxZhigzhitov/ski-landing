@@ -19,7 +19,11 @@ img{
 }
 
 .logo img{
-    width: 60px;
+    width: 120px;
+}
+
+.footer__logo{
+    width: 80px;
 }
 
 
@@ -357,7 +361,7 @@ section{
     background-size: cover;
     background-position-x: center;
     height: 800px;
-    padding: 0px 0px 50px;
+    padding: 300px 0px 50px;
     text-align: center;
     position: relative;
     overflow-y: hidden;
@@ -369,7 +373,6 @@ section{
 }
 
 .housing .title--sec{
-    padding-top: 300px;
     margin-bottom: 200px;
 }
 
@@ -443,7 +446,7 @@ section{
     }
 }
 
-.title--big-label{
+.title-label{
     
     position: absolute;
     left: calc(50% - 510px);
@@ -552,7 +555,7 @@ section{
 @media screen and (max-width: 1024px){
 
     
-    .title--big-label{
+    .title-label{
         display: none;
     }
 
@@ -590,7 +593,7 @@ section{
 
 
     .footer__logo{
-        margin-right: 20px;
+        margin-right: 70px;
     }
     .footer__navigation-list{
         margin-right: 50px;
@@ -606,12 +609,46 @@ section{
     .title--main{
         font-size: 38px;
     }
+    .logo img{
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .title-screen{
+        height: 150vh;
+        background-position: center bottom 25vh;
+    }
+
+    .title-screen__content{
+        min-height: 15vh;
+    }
+
+    .logo img{
+        max-height: 70px;
+        width: auto;
+    }
 }
 
 
 @media screen and (max-width: 430px) {
+    body{
+        font-size: 14px;
+    }
+
+    
+
     .title-screen{
         background-position: center bottom 30vh;
+    }
+
+    .title--main{
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+
+    .title-screen__descr{
+        font-size: 14px;
     }
 
     .housing .title.title--sec{
@@ -689,7 +726,11 @@ section{
 
 // ANIMATION RULES
 
-@keyframes anim-slight-keyf{
+.textblock, .title--main, .title--sec, .title-label, .content-image{
+    opacity: 0;
+}
+
+@keyframes anim-text-keyf{
     from {opacity: 0; transform: translateY(30px);}
     to {opacity: 1;  transform: translateY(0px);}
 }
@@ -699,9 +740,18 @@ section{
     to {opacity: 1; transform: translateY(0px)}
 }
 
-.anim-slight{
-    animation: anim-slight-keyf 0.8s ease-out both;
+@keyframes anim-article-image-keyf{
+    from {transform: scale(0.90); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+.anim-text{
+    animation: anim-text-keyf 0.8s ease-out both;
 }
 .anim-label{
     animation: anim-label-keyf 0.8s ease-out both;
+}
+
+.anim-article-image{
+    animation: anim-article-image-keyf 0.8s ease-out both;
 }
