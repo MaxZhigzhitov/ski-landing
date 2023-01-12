@@ -33,9 +33,9 @@ window.addEventListener('scroll', lazyScrollCheck);
 
 
 function lazyScrollCheck(){
-    let animTextIndex = animTextPositions.findIndex(item => scrollY > item - (windowHeight - 250));
+    let animTextIndex = animTextPositions.findIndex(item => scrollY > item - (windowHeight - 200));
     let animLabelIndex = animLabelPositions.findIndex(item => scrollY > item - (windowHeight - 450));
-    let animImageIndex = animImagesPositions.findIndex(item => scrollY > item - (windowHeight - 250));
+    let animImageIndex = animImagesPositions.findIndex(item => scrollY > item - (windowHeight - 220));
     
     if (animTextIndex >= 0){
         animTexts[animTextIndex].classList.add('anim-text');
